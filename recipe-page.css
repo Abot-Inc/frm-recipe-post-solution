@@ -1,0 +1,147 @@
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Young-Serif;
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+    --Text-font: Outfit, sans-serif;
+    --Heading-font: Young-Serif, sans-serif;
+}
+
+
+body {
+    padding: 0;
+    background-color: hsl(30, 54%, 90%);
+    font-size: 0.6rem;  
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.recipe-card {
+    margin: 0 auto;
+    width: 250px;
+    background-color: white;
+    font-family: var(--Text-font);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+hr {
+    background-color:hsl(30, 18%, 87%);
+    border: none;
+    height: 0.01rem;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+h1,h2 {
+    font-family: var(--Heading-font);
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-size: 1.5rem;
+    margin: 1.5rem 0rem 0.8rem;
+    font-weight: 100;
+}
+
+.section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 0.3rem 0rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1.2rem 0rem;
+    line-height: 0.5rem;
+}
+
+.prep-time {
+    color:hsl(332, 51%, 32%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+ul span, ol span {
+    font-weight: 600;
+}
+
+h2 {
+    color:hsl(14, 45%, 36%);
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 0rem;
+}
+
+ul li, ol li {
+    padding-left: 0.4rem;
+    line-height: 1.2rem;
+}
+ul, ol{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+article li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;;
+}
+
+article ul li::marker {
+    font-weight: 800;
+    font-size: 0.5rem;
+}
+
+section li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 0.5rem;
+}
+
+.instructions-block {
+    margin-bottom: 1rem;
+}
+
+article div {
+    line-height: 1.2rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.nutrition-table-text{
+    margin: 0.6rem 0rem;
+}
+
+.nutrients, .nutritional-value{
+    display: inline-block;
+    line-height: 1.5rem;    
+}
+
+.nutrients {
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.nutrition-header {
+    margin-top: 1.2rem;
+}
+
+.nutritional-value{
+    width: 10%;
+    color: hsl(14, 45%, 36%);
+    font-weight: 900;
+}
